@@ -20,7 +20,7 @@
 
   <groupId>org.fusesource.hawtbuf</groupId>
   <artifactId>hawtbuf-proto-tests</artifactId>
-  <version>NONE</version>
+  <version>1.7-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <dependencies>
@@ -28,7 +28,7 @@
     <dependency>
       <groupId>org.fusesource.hawtbuf</groupId>
       <artifactId>hawtbuf-proto</artifactId>
-      <version>@project.version@</version>
+      <version>1.7-SNAPSHOT</version>
     </dependency>
     
     <dependency>
@@ -60,7 +60,7 @@
       <plugin>
         <groupId>org.fusesource.hawtbuf</groupId>
         <artifactId>hawtbuf-protoc</artifactId>
-        <version>@project.version@</version>
+        <version>1.7-SNAPSHOT</version>
          <executions>
           <execution>
             <goals>
