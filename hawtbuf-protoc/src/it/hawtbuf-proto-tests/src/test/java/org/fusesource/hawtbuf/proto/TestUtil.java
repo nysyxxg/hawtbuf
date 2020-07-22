@@ -57,11 +57,7 @@ class TestUtil {
       throw new RuntimeException("UTF-8 not supported.", e);
     }
   }
-
-  /**
-   * Get a {@code TestAllTypes} with all fields set as they would be by
-   * {@link #setAllFields(TestAllTypes.Builder)}.
-   */
+  
   public static TestAllTypes getAllSet() {
     TestAllTypes builder = new TestAllTypes();
     setAllFields(builder);
@@ -724,10 +720,7 @@ class TestUtil {
     Assert.assertEquals(a, b);
   }
 
-  /**
-   * @param filePath The path relative to
-   * {@link com.google.testing.util.TestUtil#getDefaultSrcDir}.
-   */
+ 
   public static String readTextFromFile(String filePath) {
     return readBytesFromFile(filePath).utf8().toString();
   }
@@ -754,10 +747,7 @@ class TestUtil {
       "C++ source tree.");
   }
 
-  /**
-   * @param filePath The path relative to
-   * {@link com.google.testing.util.TestUtil#getDefaultSrcDir}.
-   */
+ 
   public static Buffer readBytesFromFile(String filename) {
     File fullPath = new File(getTestDataDir(), filename);
     try {
@@ -772,14 +762,7 @@ class TestUtil {
         "Couldn't read file: " + fullPath.getPath(), e);
     }
   }
-
-  /**
-   * Get the bytes of the "golden message".  This is a serialized TestAllTypes
-   * with all fields set as they would be by
-   * {@link setAllFields(TestAllTypes.Builder)}, but it is loaded from a file
-   * on disk rather than generated dynamically.  The file is actually generated
-   * by C++ code, so testing against it verifies compatibility with C++.
-   */
+ 
   public static Buffer getGoldenMessage() {
     if (goldenMessage == null) {
       goldenMessage = readBytesFromFile("golden_message");

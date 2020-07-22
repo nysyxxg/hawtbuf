@@ -20,9 +20,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-/**
- * @author <a href="http://hiramchirino.com">Hiram Chirino</a>
- */
+
 public class DataByteArrayOutputStreamTest {
 
     /**

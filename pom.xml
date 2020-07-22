@@ -129,10 +129,10 @@
             <Export-Package>{local-packages};version=${project.version};-noimport:=true</Export-Package>
             <Import-Package>${hawtbuf.osgi.import}</Import-Package>
             <Private-Package>${hawtbuf.osgi.private}</Private-Package>
-            <DynamicImport-Package>${hawtbuf.osgi.dynamic}</DynamicImport-Package>
-            <_versionpolicy-impl>[$(version;==;$(@)),$(version;=+;$(@)))</_versionpolicy-impl>
-            <_versionpolicy-uses>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy-uses>
-            <_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
+            <!--<DynamicImport-Package>${hawtbuf.osgi.dynamic}</DynamicImport-Package>-->
+            <!--<_versionpolicy-impl>[$(version;==;$(@)),$(version;=+;$(@)))</_versionpolicy-impl>-->
+            <!--<_versionpolicy-uses>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy-uses>-->
+            <!--<_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>-->
             <_failok>false</_failok>
           </instructions>
         </configuration>
